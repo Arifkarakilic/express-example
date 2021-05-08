@@ -1,8 +1,10 @@
+require("dotenv")();
+
 module.exports = {
-    HOST: "localhost",
-    USER: "postgres",
-    PASSWORD: "2323",
-    DB: "testdb",
+    HOST: process.env.HOSTNAME,
+    USER: process.env.USER ,
+    PASSWORD: process.env.PASSWORD,
+    DB: process.env.DB,
     dialect: "postgres",
     pool: {
       max: 5,
